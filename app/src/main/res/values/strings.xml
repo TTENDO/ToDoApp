@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">ToDoApp</string>
     <string name="the_name">Becky</string>
-    <string name="the_message">Hey, can you answer your phone?</string>
-    <string name="the_time">Yesterday</string>
+    <string name="the_product_name">Samsung Galaxy F04</string>
+    <string name="the_price">UGX 375,OOO</string>
+    <string name="the_cart_button">Add to cart</string>
 </resources>

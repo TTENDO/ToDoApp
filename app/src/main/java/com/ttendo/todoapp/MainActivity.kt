@@ -19,18 +19,13 @@ class MainActivity : AppCompatActivity() {
         val myList = binding.myList
         val list = ArrayList<ChatModel>()
 
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Ivan Ojok","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Mugabi Daniel","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Ttendo Becky","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Ivan Ojok","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Mugabi Daniel","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Ttendo Becky","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Ivan Ojok","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Mugabi Daniel","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Ttendo Becky","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Ivan Ojok","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Mugabi Daniel","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Ttendo Becky","Hello, how are you doing?","Yesterday"))
+        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Samsung Galaxy F04","UGX 375,000",1))
+        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Samsung Galaxy M04","UGX 465,000",1))
+        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Samsung Galaxy AO3s","UGX 410,000",1))
+        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Samsung Galaxy A14","UGX 468,000",1))
+        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Samsung Note 10","UGX 1,375,000",1))
+        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Samsung Galaxy AO3 Core","UGX 349,000",1))
+
 
         val baseAdapter = MyAdapter(this,list)
 

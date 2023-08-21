@@ -1,11 +1,13 @@
 package com.ttendo.todoapp
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.media.Image
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 
@@ -26,17 +28,18 @@ class MyAdapter(val context: Context,val list:ArrayList<ChatModel>):BaseAdapter(
     }
 
     //get the ui and loads it on the list view
+    @SuppressLint("MissingInflatedId")
     override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
         val view = LayoutInflater.from(context).inflate(R.layout.list_view_layout,null)
 
-        val name = view.findViewById<TextView>(R.id.name)
-        val message = view.findViewById<TextView>(R.id.message)
-        val date = view.findViewById<TextView>(R.id.time)
+        val productName = view.findViewById<TextView>(R.id.product)
+        val price = view.findViewById<TextView>(R.id.price)
+        val addToCartBtn = view.findViewById<Button>(R.id.cart_button)
         val image = view.findViewById<ImageView>(R.id.icon)
 
-        name.text = list[p0].name
-        message.text = list[p0].message
-        date.text = list[p0].date
+        productName.text = list[p0].productName
+        price.text = list[p0].price
+        addToCartBtn.setId(list[p0].addToCartBtn)
         image.setImageResource(list[p0].image)
 
         return view;
