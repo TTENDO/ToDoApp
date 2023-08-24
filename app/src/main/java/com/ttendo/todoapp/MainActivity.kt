@@ -1,14 +1,10 @@
 package com.ttendo.todoapp
 
-import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.ttendo.todoapp.databinding.ActivityMainBinding
-import java.text.FieldPosition
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,25 +12,24 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val myList = binding.myList
-        val list = ArrayList<ChatModel>()
+        val list = ArrayList<ActivityModel>()
 
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Ivan Ojok","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Mugabi Daniel","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Ttendo Becky","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Ivan Ojok","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Mugabi Daniel","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Ttendo Becky","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Ivan Ojok","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Mugabi Daniel","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Ttendo Becky","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Ivan Ojok","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Mugabi Daniel","Hello, how are you doing?","Yesterday"))
-        list.add(ChatModel(R.drawable.ic_android_black_24dp,"Ttendo Becky","Hello, how are you doing?","Yesterday"))
+        list.add(ActivityModel(R.drawable.ic_android_black_24dp,"Give thanks","unknown"))
+        list.add(ActivityModel(R.drawable.ic_android_black_24dp,"Check the time","5:10am"))
+        list.add(ActivityModel(R.drawable.ic_android_black_24dp,"Check the time","5:10am"))
+        list.add(ActivityModel(R.drawable.ic_android_black_24dp,"Check the time","5:10am"))
+        list.add(ActivityModel(R.drawable.ic_android_black_24dp,"Check the time","5:10am"))
+        list.add(ActivityModel(R.drawable.ic_android_black_24dp,"Check the time","5:10am"))
+        list.add(ActivityModel(R.drawable.ic_android_black_24dp,"Check the time","5:10am"))
+        list.add(ActivityModel(R.drawable.ic_android_black_24dp,"Check the time","5:10am"))
+        list.add(ActivityModel(R.drawable.ic_android_black_24dp,"Check the time","5:10am"))
+        list.add(ActivityModel(R.drawable.ic_android_black_24dp,"Check the time","5:10am"))
+        list.add(ActivityModel(R.drawable.ic_android_black_24dp,"Check the time","5:10am"))
 
-        val baseAdapter = MyAdapter(this,list)
-
-        binding.myList.adapter = baseAdapter
+        val adapter = ActivityAdapter(this,list)
+        val recyclerView = findViewById<RecyclerView>(R.id.my_recycler_view)
+        recyclerView.adapter = adapter
+        recyclerView.layoutManager = LinearLayoutManager(this)
     }
 }
 

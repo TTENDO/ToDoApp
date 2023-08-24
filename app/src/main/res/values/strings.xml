@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">ToDoApp</string>
-    <string name="the_name">Becky</string>
-    <string name="the_message">Hey, can you answer your phone?</string>
-    <string name="the_time">Yesterday</string>
+    <string name="the_activity">First thing</string>
+    <string name="the_time">5:00am</string>
 </resources>
