@@ -2,4 +2,15 @@
     <string name="app_name">ToDoApp</string>
     <string name="the_activity">First thing</string>
     <string name="the_time">5:00am</string>
+    <string name="activity_name">Work</string>
+    <string name="activity_time">7:30am</string>
+    <string name="activity_desc">asdada\nasdadas\nasdadas\nasdadas\nasdadas\nasdadas</string>
+    <string name="activity_button">Marked as Complete</string>
+    <string name="current_activity_status">Pending</string>
+    <string name="Create">Create Activity</string>
+    <string name="name">Enter activity name</string>
+    <string name="description">Enter activity description</string>
+    <string name="date">Enter date</string>
+    <string name="image_text">Capture image</string>
+    <string name="camera">camera btn</string>
 </resources>

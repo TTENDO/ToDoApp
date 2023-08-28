@@ -1,5 +1,6 @@
 package com.ttendo.todoapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -13,6 +14,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val addButton = binding.addBtn
+        addButton.setOnClickListener {
+            var intent = Intent(this,CreateActivity::class.java)
+            startActivity(intent)
+        }
 
         val list = ArrayList<ActivityModel>()
 
