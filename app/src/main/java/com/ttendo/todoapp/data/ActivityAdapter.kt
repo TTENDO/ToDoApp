@@ -1,4 +1,4 @@
-package com.ttendo.todoapp
+package com.ttendo.todoapp.data
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.ttendo.todoapp.R
 
 class ActivityAdapter(var context:Context,var list:ArrayList<ActivityModel>):RecyclerView.Adapter<ActivityAdapter.ActivityViewHolder>(){
     class ActivityViewHolder(itemView: View):ViewHolder(itemView){

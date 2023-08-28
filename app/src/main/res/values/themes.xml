@@ -5,5 +5,9 @@
         <item name="colorPrimary">@color/baseColor</item>
     </style>
 
-    <style name="Theme.ToDoApp" parent="Base.Theme.ToDoApp" />
+<!--    <style name="Theme.ToDoApp" parent="Base.Theme.ToDoApp" />-->
+<!--    <style name="Theme.ToDoApp" parent="Base.Theme.ToDoApp" />-->
+    <style name="Theme.ToDoApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/landingColor</item>
+    </style>
 </resources>
