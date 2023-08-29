@@ -11,10 +11,6 @@ class DetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_details)
 
-//        val image = intent.getIntExtra("image",R.drawable.phone)
-//        val name= intent.getStringExtra("activityName")
-//        val icon = findViewById<ImageView>(R.id.icon)
-//        icon.setImageResource(image)
 
 
         val image = intent.getIntExtra("image", R.drawable.phone)
