@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.ttendo.todoapp.data.ActivityAdapter
 import com.ttendo.todoapp.data.ActivityModel
 import com.ttendo.todoapp.databinding.ActivityMainBinding
@@ -12,10 +13,13 @@ import com.ttendo.todoapp.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+//        val binding = ActivityMainBinding.inflate(layoutInflater)
+//        setContentView(binding.root)
+        setContentView(R.layout.activity_main)
 
-        val addButton = binding.addBtn
+
+//        val addButton = binding.addBtn
+        val addButton = findViewById<FloatingActionButton>(R.id.add_btn)
         addButton.setOnClickListener {
             var intent = Intent(this,CreateActivity::class.java)
             startActivity(intent)
